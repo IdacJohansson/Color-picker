@@ -1,0 +1,19 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+$primary: #faf2a1;
+$heading-font: "Bebas Neue", sans-serif;
+$p-font: "Raleway", sans-serif;
+
+body {
+  background-color: $primary;
+  font-family: $p-font;
+}
+
+h1 {
+  font-family: $heading-font;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
