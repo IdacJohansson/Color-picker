@@ -2,12 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 $primary: #faf2a1;
+$navigation-color: #0b3954;
+$navigation-text: #fff;
+
 $heading-font: "Bebas Neue", sans-serif;
-$p-font: "Raleway", sans-serif;
+$text-font: "Raleway", sans-serif;
+
+.bg-navigationColor {
+  background-color: $navigation-color;
+}
+.color-navigationText {
+  color: $navigation-text;
+}
+
+.color-yellow {
+  color: #eec643;
+}
+
+.color-blue {
+  color: #2667ff;
+}
 
 body {
   background-color: $primary;
-  font-family: $p-font;
+  font-family: $text-font;
 }
 
 h1 {
