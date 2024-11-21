@@ -1,4 +1,4 @@
-import './index.scss'
+import '../src/Styles/_index.scss'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
