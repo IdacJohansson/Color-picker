@@ -1,6 +1,5 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 import candyCane from "../assets/candy-cane.png";

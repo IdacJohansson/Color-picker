@@ -1,9 +1,64 @@
 import React from "react";
+import { useState } from "react";
+
+import Button from "react-bootstrap/Button";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
+  const [counter, setCounter] = useState(0);
+
+  const increment = () => {
+    setCounter(counter + 1);
+  };
+
+  const decrement = () => {
+    setCounter(counter - 1);
+  };
+
+  const reset = () => {
+    setCounter(0);
+  };
+
   return (
-    <div>
-      <h1 className="mt-5">WELCOME</h1>
-    </div>
+    <Container className="text-center">
+      <Row>
+        <Col>
+          <h1 className="mt-5">WELCOME</h1>
+        </Col>
+      </Row>
+      <Row className="mt-4">
+        <Col>
+          <Button
+            variant="secondary"
+            size="lg"
+            className="mx-2"
+            onClick={increment}
+          >
+            Increment +
+          </Button>
+          <Button
+            variant="secondary"
+            size="lg"
+            className="mx-2"
+            onClick={decrement}
+          >
+            Decrement -
+          </Button>
+          <Button 
+            variant="dark" 
+            size="lg" 
+            className="mx-2" 
+            onClick={reset}
+          >
+            Reset
+          </Button>
+        </Col>
+      </Row>
+      <Row className="mt-4">
+        <Col>
+          <h2>Counter: {counter} </h2>
+        </Col>
+      </Row>
+    </Container>
   );
 }

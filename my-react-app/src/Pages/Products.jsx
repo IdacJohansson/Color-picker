@@ -2,9 +2,7 @@ import React from 'react';
 
 import ProductCard from "../Components/ProductCard";
 
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
+import { Container, Row, Col } from "react-bootstrap";
 
 import bananaBubs from "../assets/Banana_Bubs.png";
 import raspberryLicoriceSkull from "../assets/Hallon_Lakritsskalle.png";
