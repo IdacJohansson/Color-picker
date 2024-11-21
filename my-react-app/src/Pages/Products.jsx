@@ -14,6 +14,7 @@ import greenFrogs from "../assets/grona-grodor_picture.png";
 export default function Products() {
     return (
         <>
+        <main className="d-flex flex-column min-vh-100">
         <h1 className="mt-5">Products</h1>
         <Container>
           <Row>
@@ -37,7 +38,7 @@ export default function Products() {
                 price="11 $" />
             </Col>
           </Row>
-          <Row className="mt-3 mb-3">
+          <Row className="mt-3 mb-5">
             <Col>
               <ProductCard
                 image={foamIcecream}
@@ -59,6 +60,7 @@ export default function Products() {
             </Col>
           </Row>
         </Container>
+        </main>
       </>
     )
   }

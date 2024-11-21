@@ -1,5 +1,7 @@
 @import "bootstrap/scss/bootstrap";
+@import 'normalize.css'; 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 $primary: #faf2a1;
 $navigation-color: #0b3954;
@@ -15,17 +17,13 @@ $text-font: "Raleway", sans-serif;
   color: $navigation-text;
 }
 
-.color-yellow {
-  color: #eec643;
-}
-
-.color-blue {
-  color: #2667ff;
-}
+/*Styles*/
 
 body {
   background-color: $primary;
   font-family: $text-font;
+  min-height: 100vh;
+  height: 100%;
 }
 
 h1 {
@@ -36,3 +34,23 @@ h1 {
   justify-content: center;
 }
 
+.icon {
+  font-size: 20px;
+}
+
+.icon__link {
+  color: $navigation-text;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.navbar-brand {
+  color: $navigation-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $navigation-text;
+  }
+}

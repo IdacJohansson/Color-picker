@@ -25,10 +25,16 @@ export default function NavBar() {
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link href="/products" className="color-navigationText">
+              <Nav.Link
+                href="/products"
+                className="color-navigationText icon__link"
+              >
                 Products
               </Nav.Link>
-              <Nav.Link href="/contact" className="color-navigationText">
+              <Nav.Link
+                href="/contact"
+                className="color-navigationText icon__link"
+              >
                 Contact
               </Nav.Link>
             </Nav>

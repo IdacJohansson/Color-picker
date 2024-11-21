@@ -20,6 +20,7 @@ export default function Home() {
   };
 
   return (
+    <main className="d-flex flex-column min-vh-100">
     <Container className="text-center">
       <Row>
         <Col>
@@ -60,5 +61,6 @@ export default function Home() {
         </Col>
       </Row>
     </Container>
+    </main>
   );
 }
