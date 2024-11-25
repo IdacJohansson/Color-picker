@@ -23,3 +23,14 @@ Create a footer aswell.
 On one of your pages, add a counter.
 You wanna display 3 buttons, one for increment, one for decrement, and one for reset.
 You also want to add a number to your page. These buttons should change the number dynamically inside you page.
+
+
+### Assignment 3
+
+Create a color-picker 
+
+Add one more page to your current project and connect it with react-router-dom. Inside your new page, create an input for the user where they can pick any color that they want. Dynamically change the color of another element based on that choice 
+
+OPTIONAL: Add the color dynamically to your navbar. You might need useContext for for that.
+
+Feel free to add any amount of CSS that you want to your page 

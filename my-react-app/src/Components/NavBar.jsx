@@ -37,6 +37,12 @@ export default function NavBar() {
               >
                 Contact
               </Nav.Link>
+              <Nav.Link
+                href="/colorpicker"
+                className="color-navigationText icon__link"
+              >
+                Color-picker
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
