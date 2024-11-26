@@ -1,21 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ColorContext } from "./ColorContext";
 
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function ColorPicker() {
-  const [currentColor, setCurrentColor] = useState("#ff0000");
+  const { color, setColor } = useContext(ColorContext);
+  const [headingColor, setHeadingColor] = useState("#000");
 
-  const handleColorChange = (e) => {
-    setCurrentColor(e.target.value);
+  const handleHeadingColorChange = (e) => {
+    setHeadingColor(e.target.value);
   };
+
+  const handleColorNavChange = (e) => {
+    setColor(e.target.value);
+  };
+
 
   return (
     <main className="d-flex flex-column min-vh-100">
       <Container className="text-center">
         <Row>
           <Col>
-            <h1 className="mt-5" style={{ color: currentColor }}>
+            <h1 className="mt-5" style={{ color: headingColor }}>
               Color-Picker
             </h1>
           </Col>
@@ -26,8 +33,20 @@ export default function ColorPicker() {
             <div>
               <input
                 type="color"
-                value={currentColor}
-                onChange={handleColorChange}
+                value={headingColor}
+                onChange={handleHeadingColorChange}
+              ></input>
+            </div>
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center">
+          <Col md="auto">
+            <label>Change color on navigation:</label>
+            <div>
+              <input
+                type="color"
+                value={color}
+                onChange={handleColorNavChange}
               ></input>
             </div>
           </Col>

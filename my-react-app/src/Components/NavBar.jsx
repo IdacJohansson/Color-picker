@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ColorContext } from "../Pages/ColorContext";
+
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 import candyCane from "../assets/candy-cane.png";
 
 export default function NavBar() {
+  const { color } = useContext(ColorContext);
+
   return (
     <>
-      <Navbar expand="lg" className="bg-navigationColor">
+      <Navbar
+        expand="lg"
+        className="bg-navigationColor"
+        style={{ backgroundColor: color }}
+      >
         <Container>
           <Navbar.Brand href="/" className="color-navigationText">
             <img
