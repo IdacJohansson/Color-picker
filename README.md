@@ -34,3 +34,17 @@ Add one more page to your current project and connect it with react-router-dom. 
 OPTIONAL: Add the color dynamically to your navbar. You might need useContext for for that.
 
 Feel free to add any amount of CSS that you want to your page 
+
+### Assignment 4
+
+Create a To-Do-List: 
+
+Create a new page withing your current project. Make sure to link it to you other pages using react-router-dom. 
+Create an input where the user can type a task.  
+
+Create a button so the user can add the task to the list. 
+Each task item should have a remove button, to remove the item from the list. 
+
+OPTIONAL: Give each list-item 2 more buttons. The first button should move your item up one step. The second button should move your item down one step. 
+
+Feel free to add any CSS that you would like to your project 
