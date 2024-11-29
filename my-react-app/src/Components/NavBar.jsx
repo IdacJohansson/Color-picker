@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ColorContext } from "../Pages/ColorContext";
+import { ColorContext } from "../contexts/ColorContext";
 
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
@@ -50,6 +50,12 @@ export default function NavBar() {
                 className="color-navigationText icon__link"
               >
                 Color-picker
+              </Nav.Link>
+              <Nav.Link
+                href="/todolist"
+                className="color-navigationText icon__link"
+              >
+                To-Do-List
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

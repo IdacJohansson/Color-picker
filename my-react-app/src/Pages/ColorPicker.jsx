@@ -1,6 +1,5 @@
-import React from "react";
-import { useState, useContext } from "react";
-import { ColorContext } from "./ColorContext";
+import React, { useState, useContext }  from "react";
+import { ColorContext } from "../contexts/ColorContext";
 
 import { Container, Row, Col } from "react-bootstrap";
 

@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "../src/Pages/Home";
-import Products from "../src/Pages/Products";
-import Contact from "../src/Pages/Contact";
-import ColorPicker from "./Pages/ColorPicker";
+import Home from "../src/pages/Home";
+import Products from "../src/pages/Products";
+import Contact from "../src/pages/Contact";
+import ColorPicker from "./pages/ColorPicker";
+import TodoList from "../src/pages/TodoList";
 
-import Footer from "../src/Components/Footer";
-import NavBar from "../src/Components/NavBar";
+import Footer from "../src/components/Footer";
+import NavBar from "../src/components/NavBar";
 
-import { ColorProvider } from "../src/Pages/ColorContext";
+import { ColorProvider } from "../src/contexts/ColorContext";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/colorpicker" element={<ColorPicker />} />
+          <Route path="/todolist" element={<TodoList />} />
         </Routes>
         <Footer />
       </BrowserRouter>
