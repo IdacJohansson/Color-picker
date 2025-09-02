@@ -1,4 +1,4 @@
-import React, { useState, useContext }  from "react";
+import { useState, useContext } from "react";
 import { ColorContext } from "../contexts/ColorContext";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -14,7 +14,6 @@ export default function ColorPicker() {
   const handleColorNavChange = (e) => {
     setColor(e.target.value);
   };
-
 
   return (
     <main className="d-flex flex-column min-vh-100">

@@ -1,9 +1,8 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "../src/pages/Home";
-import Products from "../src/pages/Products";
-import Contact from "../src/pages/Contact";
+import Gallery from "../src/pages/Gallery";
+import Calculator from "../src/pages/Calculator";
 import ColorPicker from "./pages/ColorPicker";
 import TodoList from "../src/pages/TodoList";
 
@@ -19,8 +18,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/calculator" element={<Calculator />} />
           <Route path="/colorpicker" element={<ColorPicker />} />
           <Route path="/todolist" element={<TodoList />} />
         </Routes>

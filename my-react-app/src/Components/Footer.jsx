@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
@@ -7,7 +6,7 @@ export default function Footer() {
       <Container fluid>
         <Row style={{ height: "100px" }}>
           <Col className="d-flex flex-column justify-content-center align-items-center text-center bg-navigationColor color-navigationText">
-            <p className="fs-5">Swedish Candy Store · 2024</p>
+            <p className="fs-5">React Assignment Project · 2024</p>
             <Row>
               <Col>
                 <a

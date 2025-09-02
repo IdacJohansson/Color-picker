@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ColorContext } from "../contexts/ColorContext";
 
 import { Nav, Navbar } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-import candyCane from "../assets/candy-cane.png";
+import reactImg from "../assets/react.png";
 
 export default function NavBar() {
   const { color } = useContext(ColorContext);
@@ -20,12 +20,12 @@ export default function NavBar() {
           <Navbar.Brand href="/" className="color-navigationText">
             <img
               alt=""
-              src={candyCane}
+              src={reactImg}
               width="30"
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            Swedish Candy Store
+            React Assignment Project
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -34,16 +34,16 @@ export default function NavBar() {
           >
             <Nav>
               <Nav.Link
-                href="/products"
+                href="/gallery"
                 className="color-navigationText icon__link"
               >
-                Products
+                Gallery
               </Nav.Link>
               <Nav.Link
-                href="/contact"
+                href="/calculator"
                 className="color-navigationText icon__link"
               >
-                Contact
+                Calculator
               </Nav.Link>
               <Nav.Link
                 href="/colorpicker"
