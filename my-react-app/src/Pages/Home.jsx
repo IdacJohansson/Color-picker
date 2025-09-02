@@ -1,65 +1,45 @@
-import React, { useState } from "react";
-
-import Button from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Home() {
-  const [counter, setCounter] = useState(0);
-
-  const increment = () => {
-    setCounter(counter + 1);
-  };
-
-  const decrement = () => {
-    setCounter(counter - 1);
-  };
-
-  const reset = () => {
-    setCounter(0);
-  };
-
   return (
     <main className="d-flex flex-column min-vh-100">
-    <Container className="text-center">
-      <Row>
-        <Col>
-          <h1 className="mt-5">WELCOME</h1>
-        </Col>
-      </Row>
-      <Row className="mt-4">
-        <Col>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="mx-2"
-            onClick={increment}
-          >
-            Increment +
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            className="mx-2"
-            onClick={decrement}
-          >
-            Decrement -
-          </Button>
-          <Button 
-            variant="dark" 
-            size="lg" 
-            className="mx-2" 
-            onClick={reset}
-          >
-            Reset
-          </Button>
-        </Col>
-      </Row>
-      <Row className="mt-4">
-        <Col>
-          <h2>Counter: {counter} </h2>
-        </Col>
-      </Row>
-    </Container>
+      <Container className="text-center">
+        <Row>
+          <Col>
+            <h1 className="mt-5">WELCOME</h1>
+          </Col>
+        </Row>
+        <Row className="mt-4">
+          <Col>
+            <p>
+              This project was built as part of a React learning assignment and
+              gradually expanded through multiple tasks.
+            </p>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <strong>Gallery</strong> – Browse items with images, names, and
+                prices.
+              </li>
+              <li className="mb-2">
+                <strong>Navigation & Footer</strong> – A structured multi-page
+                layout with routing.
+              </li>
+              <li className="mb-2">
+                <strong>Counter</strong> – Interactive counter with increment,
+                decrement, and reset.
+              </li>
+              <li className="mb-2">
+                <strong>Color Picker</strong> – Pick a color and see the UI
+                update dynamically.
+              </li>
+              <li className="mb-2">
+                <strong>To-Do List</strong> – Add, manage, and remove tasks with
+                ease.
+              </li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
     </main>
   );
 }

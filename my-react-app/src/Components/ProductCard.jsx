@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 
 export default function ProductCard({ image, name, price }) {
@@ -10,6 +9,7 @@ export default function ProductCard({ image, name, price }) {
           src={image}
           alt={name}
           style={{ width: "150px", height: "auto" }}
+          className="d-block mx-auto"
         />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

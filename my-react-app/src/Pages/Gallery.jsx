@@ -1,5 +1,3 @@
-import React from 'react'; 
-
 import ProductCard from "../components/ProductCard";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -16,22 +14,23 @@ export default function Products() {
         <>
         <main className="d-flex flex-column min-vh-100">
         <h1 className="mt-5">Products</h1>
-        <Container>
+        <Container className="text-center">
           <Row>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard 
+                
                 image={bananaBubs} 
                 name="Banana Bubs" 
                 price="13 $" />
             </Col>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard
                 image={raspberryLicoriceSkull}
                 name="Raspberry Licorice Skull"
                 price="10 $"
               />
             </Col>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard 
                 image={foamSanta} 
                 name="Foam Stanta" 
@@ -39,20 +38,20 @@ export default function Products() {
             </Col>
           </Row>
           <Row className="mt-3 mb-5">
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard
                 image={foamIcecream}
                 name="Foam Icecream"
                 price="12 $"
               />
             </Col>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard 
                 image={waterMelon} 
                 name="Water Melons" 
                 price="9 $" />
             </Col>
-            <Col>
+            <Col className="d-flex justify-content-center">
               <ProductCard 
                 image={greenFrogs} 
                 name="Green Frogs" 
